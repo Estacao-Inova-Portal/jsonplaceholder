@@ -1,83 +1,39 @@
-{
-	"PorRedeCredenciada": {
-		"simulation_type": "POR REDE CREDENCIADA",
-		"user_type": "PF",
-		"coverage_type": "NACIONAL",
-		"user_age": "29 a 33",
-		"dependents": [
-			{
-				"dependent_type": "FILHO",
-				"dependente_age": "0 a 18"
-			},
-			{
-				"dependent_type": "CONJUGE",
-				"dependente_age": "24 a 28"
-			}
-		],
-    "provider": "HOSPITAL ISRAELITA SABIN"
-  },
-  "PorFaixaDePreco": {
-  	"simulation_type": "POR FAIXA DE PREÇO",
-		"user_type": "PF",
-		"coverage_type": "NACIONAL",
-    "user_age": "29 a 33",
-		"dependents": [
-			{
-				"dependent_type": "FILHO",
-				"dependente_age": "0 a 18"
-			},
-			{
-				"dependent_type": "CONJUGE",
-				"dependente_age": "24 a 28"
-			}
-		],
-		"value_range": {
-			"initial_value": 11010,
-			"final_value": 80035
-		}
-	},
-  "ProFaixaDePrecoPJ": {
-  	"simulation_type": "POR FAIXA DE PREÇO",
-  	"user_type": "PJ",
-  	"coverage_type": "GRUPO DE MUNICIPIOS",
-  	"user_age": "29 a 33",
-  	"dependents": [
-  		{
-  			"dependent_type": "FUNCIONARIO",
-  			"dependente_age": "24 a 28"
-  		},
-  		{
-  			"dependent_type": "FUNCIONARIO",
-  			"dependente_age": "34 a 38"
-  		},
-  		{
-  			"dependent_type": "FUNCIONARIO",
-  			"dependente_age": "39 a 43"
-  		},
-			{
-				"dependent_type": "FUNCIONARIO",
-				"dependente_age": "44 a 48"
-			},
-			{
-				"dependent_type": "FUNCIONARIO",
-				"dependente_age": "49 a 53"
-			},
-			{
-				"dependent_type": "FUNCIONARIO",
-				"dependente_age": "39 a 43"
-			},
-			{
-				"dependent_type": "FUNCIONARIO",
-				"dependente_age": "39 a 43"
-			},
-			{
-				"dependent_type": "FUNCIONARIO",
-				"dependente_age": "39 a 43"
-			}
-		],
-    "value_range": {
-			"initial_value": 10000,
-			"final_value": 50000
-		}
-	}
+{ "Planos": [
+    {
+      "plan_name": "PERSONAL 2",
+      "coverage_type": "ESTADUAL",
+      "co-participation": false,
+      "room_type": "QUARTO COLETIVO",
+      "city_providers": 5000,
+      "state_providers": 10000,
+      "plan_value": 86503
+    },{
+      "plan_name": "UNIPART BASICO QC",
+      "coverage_type": "ESTADUAL",
+      "co-participation": true,
+      "co-participation_percentage": 20,
+      "room_type": "QUARTO COLETIVO",
+      "city_providers": 5000,
+      "state_providers": 10000,
+      "plan_value": 87897
+    },{
+      "plan_name": "UNIPART BASICO QP",
+      "coverage_type": "ESTADUAL",
+      "co-participation": true,
+      "co-participation_percentage": 30,
+      "room_type": "QUARTO INDIVIDUAL",
+      "city_providers": 5000,
+      "state_providers": 10000,
+      "plan_value": 90843
+    },{
+      "plan_name": "ALFA 2",
+      "coverage_type": "NACIONAL",
+      "co-participation": false,
+      "room_type": "QUARTO INDIVIDUAL",
+      "city_providers": 5000,
+      "state_providers": 10000,
+      "country_providers": 50000,
+      "plan_value": 250143
+    }
+  ]
 }
